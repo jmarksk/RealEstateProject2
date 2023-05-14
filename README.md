@@ -17,7 +17,7 @@ Modest improvement in 0-centeredness of residuals but still non-linear issues, m
 
 #### New model with more log tranformed variables (sqft_patio,sqft_garage, grade and view ) *Improving on linearity issue and heteroskedaticity issues and non-normality issues(despite improvements).
 Also,0 bedroom houses removed b/c errors and remove bedrooms as predictor b/c insign. 
-from previous model, no improvement in linearity or normalness of residuals. Also Rsquared not improved. 
+from previous model, no improvement in linearity or normalness of residuals. Also Rsquared not improved. some heteroskedacities improved 
 
 #### Thus start final model with latitude/longitude data 
 Based on above, ~97% of houses in Greater Seattle area as opposed to rural Washington. (And of those 97%, they are clustered in 6 areas).
