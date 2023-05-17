@@ -15,7 +15,7 @@ The data is housing data from a Northwestern county and comes from the county go
 
 #### Methodology/Other models
 
-- **Next model**: Add to baseline, variables with price correlation greater than .25 and sqft_living correlation less than .75 to increase rsquared. Big non-linearity issue, maybe heterskedaticity issue. Some heteroskedacity in predictor/residual plots. Non-normality in dep.     distribution and some also in indep. var. distributions.
+- **Second model**: Add to baseline, variables with price correlation greater than .25 and sqft_living correlation less than .75 to increase rsquared. Big non-linearity issue, maybe heterskedaticity issue. Some heteroskedacity in predictor/residual plots. Non-normality in dep.     distribution and some also in indep. var. distributions.
 
 - **Third Model**: Log price/sqft living variables based on non-linearity issues (in residual plots and part regress) and non- normal issues in histograms. There still are non-linearity issues, and maybe heterskedaticity. Heteroskedaticity is improved in logged indep and logged dep. variables but persists in other independent variables (e.g. patio/gar)
 
@@ -29,7 +29,7 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 - Add categorical variable, Waterfront, to increase rsquared.
 - Also drop outliers in sqft_gar and sqft_pat variables. (And drop associated dummy variables as 0 patio/no garage houses removed.)
         
-- Final model heteroskedacities, linearity, and normality of residuals are improved from the baseline model.  Heteroskedaticity is      somewhat improved from prior model (particularly in residual plots against sqft_gar and sqft_pat variables). sqft_gar and sqft_pat variables.  Residual plot appears normally distributed, and is improved from previous model, however J-B test still failed suggesting non-normality. Multicollinearity is low, all correlations below .75.
+- Final model heteroskedacities, linearity, and normality of residuals are improved from the baseline model.  Heteroskedaticity is      somewhat improved from prior model (particularly in residual plots against sqft_gar and sqft_pat variables).  Residual plot appears normally distributed, and is improved from previous model, however J-B test still failed suggesting non-normality. Multicollinearity is low, all correlations below .75.
          
 # Results/Recommedations/Next Steps
 
@@ -58,3 +58,9 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 ├── README.md
 ├── Presentation.pdf
 └── notebook.ipynb    
+
+├── data
+├── images
+├── README.md
+├── Animal_Shelter_Needs_Presentation.pdf
+└── animal_shelter_needs_analysis.ipynb
