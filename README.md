@@ -44,7 +44,7 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 
 -  Rsq is .49 compared to baseline of  0.38 and previous model of 0.46. This means the model accounts for 49% of the variation in the dependent variable.
 
-- The mean squared error of the model is about 0.42.  This is a measure of how far off the predictions of log(price) are from the actual log(price).
+- The mean squared error of the model is about 0.42.  This is the mean squared error in terms of log(Y). This is a measure of how far off the predictions of log(price) are from the actual log(price). Ideally, one would convert to terms of change in Y. 
 
 - **All six predictor variables are significant.**
 
