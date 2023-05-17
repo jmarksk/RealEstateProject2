@@ -38,7 +38,7 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
          
 # Results/Recommedations/Next Steps
 
-![OLS Results](./Images/OLS Results.png)
+![OLS_Results](./Images/OLS_Results.png)
 
 -  Rsq is .49 compared to baseline of  0.38 and previous model of 0.46. This means the model accounts for 49% of the variation in the dependent variable.
 
