@@ -7,6 +7,11 @@ The data is housing data from a Northwestern county and comes from the county go
 
 ![all_houses_map](./Images/all_houses_map.png)
 
+Prices have a non-normal, right skewed distribution, with potential outliers.  The median is 865,000. The mean is 1,113,290. 
+
+![Price_distribution](./Images/Price_distribution.png) 
+
+
 # Data Modeling
 
 #### Run baseline model based on most sign. correlated variable: sqft_living
@@ -53,14 +58,9 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 # Repository Structure
 
 
-├── data
-├── images
-├── README.md
-├── Presentation.pdf
-└── notebook.ipynb    
 
 ├── data
 ├── images
 ├── README.md
-├── Animal_Shelter_Needs_Presentation.pdf
-└── animal_shelter_needs_analysis.ipynb
+├── Presentation_RealEstate.pdf
+└── Real_estate_notebook.ipynb
