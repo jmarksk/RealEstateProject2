@@ -24,7 +24,7 @@ Prices have a non-normal, right skewed distribution, with potential outliers.  T
 
 - **Second model**: Add to baseline, variables with price correlation greater than .25 and sqft_living correlation less than .75 to increase rsquared. Big non-linearity issue, maybe heterskedaticity issue. Some heteroskedacity in predictor/residual plots. Non-normality in dep.     distribution and some also in indep. var. distributions.
 
-- **Third Model**: Log price/sqft living variables based on non-linearity issues (in residual plots and part regress) and non- normal issues in histograms. There still are non-linearity issues, and maybe heterskedaticity. Heteroskedaticity is improved in logged indep and logged dep. variables but persists in other independent variables (e.g. patio/gar)
+- **Third Model**: Log price/sqft living variables based on non-linearity issues (in residual plots and part regress) and non- normal issues in histograms. There still are non-linearity issues, and maybe heterskedaticity. Heteroskedaticity is improved in logged indep and logged dep. variables but persists in other independent variables (e.g. patio/gar).
 
 - **Fourth Model**: More log tranformed variables (sqft_patio,sqft_garage) and 0 bedroom houses removed and remove bedrooms as predictor. Also create dummy var's for whether house has garage or patio. The aim is to improve on linearity issue and heteroskedaticity issues and non-normality issues and to improve rsquared.
        
@@ -42,7 +42,7 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 
 ![OLS_Results](./Images/OLS_Results.png)
 
--  Rsq is .49 compared to baseline of  0.38 and previous model of 0.46. This means the model accounts for 49% of the variation in the dependent variable.
+-  Rsq is 0.49 compared to baseline of  0.38 and previous model of 0.46. This means the model accounts for 49% of the variation in the dependent variable.
 
 - The mean squared error of the model is about 0.42.  This is the mean squared error in terms of log(Y). This is a measure of how far off the predictions of log(price) are from the actual log(price). Ideally, one would convert to terms of change in Y. 
 
