@@ -1,3 +1,5 @@
+# **Housing Analysis Project**
+
 # Business Understanding
 The client is a housing planner that must set prices and wants to use market data to do so.  It is necessary to know the impact on the housing price of various real estate metrics, so that a price can be estimated. 
 
@@ -59,8 +61,8 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 
 
 
-├── data
-├── images
-├── README.md
-├── Presentation_RealEstate.pdf
-└── Real_estate_notebook.ipynb
+- data
+- images
+- README.md
+- Presentation_RealEstate.pdf
+- Real_estate_notebook.ipynb
