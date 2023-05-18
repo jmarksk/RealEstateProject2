@@ -13,6 +13,11 @@ Prices have a non-normal, right skewed distribution, with potential outliers.  T
 
 ![Price_distribution](./Images/Price_distribution.png) 
 
+There appear to be some patterns/dividing line in King County (non-outlier) map data, and an area near the center of the map with higher price houses.
+
+![House_price_map](./Images/House_price_map.png)
+        
+
 
 # Data Modeling
 
@@ -32,8 +37,8 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 
 ## Thus, in final model:
 
-- Log all numerical variables from prior model (sqft_living_log	sqft_garage_log	sqft_patio_log	grade_num_log	view_num_log) due to non-normality(despite improvement) and some heteroskedaticity.
-- Add categorical variable, Waterfront, to increase rsquared.
+- Log all numerical variables from prior model (sqft_living_log, sqft_garage_log, sqft_patio_log, grade_num_log, view_num_log) due to non-normality(despite improvement) and some heteroskedaticity.
+- Add categorical variables Waterfront and Jumbo to increase rsquared.
 - Also drop outliers in sqft_gar and sqft_pat variables. (And drop associated dummy variables as 0 patio/no garage houses removed.)
         
 - Final model heteroskedacities, linearity, and normality of residuals are improved from the baseline model.  Heteroskedaticity is      somewhat improved from prior model (particularly in residual plots against sqft_gar and sqft_pat variables).  Residual plot appears normally distributed, and is improved from previous model, however J-B test still failed suggesting non-normality. Multicollinearity is low, all correlations below .75.
@@ -42,19 +47,21 @@ This model has similar issues of non-linearity, non-normality (Jarque-Beta test)
 
 ![OLS_Results](./Images/OLS_Results.png)
 
--  Rsq is 0.49 compared to baseline of  0.38 and previous model of 0.46. This means the model accounts for 49% of the variation in the dependent variable.
+-  **Rsq is 0.51** compared to baseline of  0.38 and previous model of 0.46. This means the model accounts for **51% of the variation** in the dependent variable.
 
-- The mean squared error of the model is about 0.42.  This is the mean squared error in terms of log(Y). This is a measure of how far off the predictions of log(price) are from the actual log(price). Ideally, one would convert to terms of change in Y. 
+- **The mean squared error of the model is about 0.41**.  This is the mean squared error in terms of log(Y). This is a measure of how far off the predictions of log(price) are from the actual log(price). Ideally, one would convert to terms of change in Y. 
 
-- **All six predictor variables are significant.**
+- **All seven predictor variables are significant.**
 
-- WaterFront properties: 39.68% in price
-- For each 1% increase in grade_num_log: 1.78% in price
-- For each 1% increase in sqft_living_log: 0.50% in price
+- WaterFront properties: **39.68% in price**
+- Jumbo area: **76.84% in price**
+- For each 1% increase in grade_num_log: **1.78% in price**
+- For each 1% increase in sqft_living_log: **0.50% in price**
 
 
 - **Next steps**
-- try to improve on rsquared/reduce small non-linearity by using the lat/long scatter map to create dummy variables for specific geographic areas (would likely be about 10). 
+- Establish a better interpretation of the mean squared error.
+- Further analyze the negative coefficient of garage size variable.
 - Also testing interaction variables (e.g. differing lot sizes and house sizes for different geographic areas.)
     
 # Repository Structure
