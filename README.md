@@ -1,4 +1,4 @@
-# **Housing Analysis Project**
+    # **Housing Analysis Project**
 
 # Business Understanding
 The client is a housing planner that must set prices and wants to use market data to do so.  It is necessary to know the impact on the housing price of various real estate metrics, so that a price can be estimated. 
@@ -60,12 +60,12 @@ There appear to be some patterns/dividing line in King County (non-outlier) map 
 
 - **All seven predictor variables are significant.**
 
-![Coef_Table](./Images/Coef_Table.gif)
+![Coef_Table_Int](./Images/Coef_Table_Int.png)
 
 ### Recommendations
 
-- To determine a price of a house, take a similar house with about 10% less sqft of living area and add 4.85% to that price.
-- To determine a price of a house with a waterfront, take a similar house without a waterfront and add 39.68% to the non-waterfront price.
+- To determine a price of a house, take a similar house with about 10% less sqft of living area and add 4.71% to that price.
+- To determine a price of a house with a waterfront, take a similar house without a waterfront and add 35.24% to the non-waterfront price.
 - To determine a price of a house in the Jumbo area, take a similar house not in the Jumbo area and add 76.84% to the non-Jumbo price.
 
 
