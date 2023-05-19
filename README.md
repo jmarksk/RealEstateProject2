@@ -60,7 +60,7 @@ There appear to be some patterns/dividing line in King County (non-outlier) map 
 
 - **All seven predictor variables are significant.**
 
-![Coef_Table](./Images/Coef_Table.png)
+![Coef_Table](./Images/Coef_Table.gif)
 
 ### Recommendations
 
